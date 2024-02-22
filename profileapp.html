@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile App</title>
+    <style>
+        /* CSS styles for the banner */
+        .banner {
+            background-color: #757195;
+            padding: 10px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .banner img {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        /* CSS styles for the profile cards */
+        .profile-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* CSS styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="Jengram-logos/Jengram-logos.jpeg" alt="Logo">
+    </div>
+    <iframe src="https://thunkable.site/w/48fRFHWNdR-OMfL1qJ09v" 
+            title="Profile App" 
+            height="800" 
+            width="500">
+    </iframe>
+    <div id="profile-container">
+        <!-- Profile cards will be dynamically added here -->
+        <table id="profile-table">
+            <tr>
+                <th>Name</th>
+                <th>Caption</th>
+                <th>Photo</th>
+                <th>Video</th>
+                <th>Rating</th>
+            </tr>
+        </table>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+        
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyApcU3FD2tzsPOc9sQm1_byYiAOspQJkKw",
+            authDomain: "cloud-functions-1c4ec.firebaseapp.com",
+            projectId: "cloud-functions-1c4ec",
+            storageBucket: "cloud-functions-1c4ec.appspot.com",
+            messagingSenderId: "531124675064",
+            appId: "1:531124675064:web:916b637993d657171b760d",
+            measurementId: "G-EDRHZ0LQBL"
+        };
+
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        // Reference to your 'users' node
+        const usersRef = ref(database, 'users');
+
+        // Function to display profiles
+        function displayProfiles() {
+            const profileTable = document.getElementById("profile-table");
+
+            // Retrieve data from Firebase RTDB
+            onValue(usersRef, (snapshot) => {
+                snapshot.forEach((childSnapshot) => {
+                    const user = childSnapshot.val();
+
+                    // Create a new row in the table
+                    const row = profileTable.insertRow();
+
+                    // Add user information to the table cells
+                    const nameCell = row.insertCell();
+                    nameCell.textContent = user.name;
+
+                    const captionCell = row.insertCell();
+                    captionCell.textContent = user.caption;
+
+                    const photoCell = row.insertCell();
+                    const photoImg = document.createElement("img");
+                    photoImg.src = user.photo;
+                    photoImg.alt = "User Photo";
+                    photoCell.appendChild(photoImg);
+
+                    const videoCell = row.insertCell();
+                    const video = document.createElement("video");
+                    video.src = user.video;
+                    video.controls = true;
+                    videoCell.appendChild(video);
+
+                    const ratingCell = row.insertCell();
+                    ratingCell.textContent = user.rating;
+                });
+            });
+        }
+
+        // Call the function to display profiles
+        displayProfiles();
+    </script>
+
+</body>
+</html>
