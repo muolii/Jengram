@@ -4,7 +4,23 @@
             "apiComponents": {
                 "ApiContainer": {
                     "id": "ApiContainer",
-                    "children": []
+                    "children": [
+                        {
+                            "type": "AdMob Rewarded Video",
+                            "translatedName": "AdMob Rewarded Video",
+                            "isApi": true,
+                            "reactType": "AdMobRewarded",
+                            "properties": {
+                                "AdUnitID": "ca-app-pub-3940256099942544/5224354917",
+                                "AdUnitID_iOS": "ca-app-pub-3940256099942544/5224354917",
+                                "TestMode": true
+                            },
+                            "children": [],
+                            "id": "c0e71394-c4ad-429e-aef2-b152cfcc417f",
+                            "thunkableVersion": 446,
+                            "name": "AdMob_Rewarded_Video1"
+                        }
+                    ]
                 }
             },
             "assets": {
@@ -21,8 +37,8 @@
                     "createdAt": "2024-02-12T20:53:26.304Z",
                     "updatedAt": "2024-02-12T20:53:26.304Z",
                     "__v": 0,
-                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65ac5e250884704f2edf9018/projects/65c24863c1503e0ac3e58d25/assets/65ca8545aab02f4819effffd?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240213%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240213T222704Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=572b1b112b123fdce49ca819273b4d35f1a29fe8df1fc4b2470a56a55d10f93752b5f5f03cf32432c2041beeebc9434e2c2eccf35180da2601bca13303a303604f3321753e8eba6820b38aa317674b8489d8551f8bc33cdc9c53621f27a62b93a91043c82b233560c5fa9227d8bff660a55c2f0f86781d127ba2f453058160644447e675cdd368865aea1adf093b9f5702a125ac339372e756f4714f02767f3a58156548e1404b3d391d1d05ad115555af0abd48d95755f89f0084741c0d958f1c2618c2f8814a67c2de444cbf2f41542d76f229d68a33ef7ed111533648150c53715919374280bf17ff720a1ff8beb17bd69eeb2240fca0570c17f5cf78dfac",
-                    "signedUrlExpirationTime": 1708036024194
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65ac5e250884704f2edf9018/projects/65c24863c1503e0ac3e58d25/assets/65ca8545aab02f4819effffd?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240227T035547Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=0b1018f9e03938f3a35987ec5b045c0578fdd8a6e2aacbb6d699b953131cafee967f1c8728860f77fc2b0d99bcdf0072159c55eeda1ab4af75a3bfe093896427ef9fd966f6529e13574d2efe7ef0d58fb0527ee045645ccd0889d3428e6a55be1c8548cfb154a5e9e7e426a34cbeefcd0764166bec804e6f6df755b37bb391280cdefffcee09298a6605ee03aa2418f1b94f43b5a451a6f9b67d390be8fe408bfe344f35ffd39bf54cfdd377d55a925cee9c49fd0a94399af607653cfe38762ce2cdd81fd4f04f6d1bc34d6350cf65945e87e01022ceba63a44cf1df91dfdfd811a9074a0cb70169271465f7708d30ad530efa65c0380b00f907cdc673082fbc",
+                    "signedUrlExpirationTime": 1709178947249
                 },
                 "65ca8558aab02f4819f0055b": {
                     "externalStorageType": "GCS",
@@ -37,8 +53,8 @@
                     "createdAt": "2024-02-12T20:53:44.726Z",
                     "updatedAt": "2024-02-12T20:53:44.726Z",
                     "__v": 0,
-                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65ac5e250884704f2edf9018/projects/65c24863c1503e0ac3e58d25/assets/65ca8558aab02f4819f0055b?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240213%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240213T222704Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=2adeef617f7d5161c5ab9c2ba505c771ef04688c9ff8d03619a28278f978d3a2ee095288dc501484d78ab23f18b9f6200ee6c9a10f1ab1db75841296ee1a7ffbb5a2d3741e683253d7a15f2000eb1950aaec0b34e72ab5663cd3e1fa08e22a1ad462869140a510da1dac13af0567bfdaa7fb0e504abe8f1bb5a761cbdb622729358ee889fe6f3acf636c07761b0414b49712fff5b9336daf539a5df27d016fb779bbcbd5f5146803fe4bba814bca0d3b27486c71c1bd7dee89ef0a33e547529d65fb240f6958ffcffb3e5074577274c306be6e3d2e247c7e95ae44b943e82b2c3af9a12c6dd2b3d064b7403ebb94d8f8a5bc9d64caab6703a9170fc96bb0bef8",
-                    "signedUrlExpirationTime": 1708036024198
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65ac5e250884704f2edf9018/projects/65c24863c1503e0ac3e58d25/assets/65ca8558aab02f4819f0055b?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240227%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240227T035547Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=bce46ca3fd979219f51b9619bcc6d553d02f67fa874ab420050c012a9d7bfe064a2478d2e36da2a397d34fd9647998487f4579cdaaadcb08f003f61b0d0ddd04dcef64def8db5496e04dd60b4d2daea95807d26f86f0b5c8c3d467e23e857b2ac5bb9e61ff0a2e25fd5184ba380ca4e9dbb2b26325c449d4f62dcf0f0f2d14840cc334292215723b530119f27217ab002d99d1dc74f190d0b6649b1f82db541522b7123b33bdac11b36d4466aa7dd8d37af6c33d4e1d609339575be5dff7560fa790ed75977b4d633bbf644d286fd22b9472adf666768d70544734934cd941939326e2df0a55875354851422124881ac9a76c211e17922b19a1b221e02f4ee99",
+                    "signedUrlExpirationTime": 1709178947253
                 }
             },
             "backendUpgradeVersion": 24,
@@ -206,8 +222,7 @@
                     "ios": {
                         "usageDescriptions": {
                             "NSCameraUsageDescription": "",
-                            "NSPhotoLibraryUsageDescription": "",
-                            "NSMicrophoneUsageDescription": ""
+                            "NSPhotoLibraryUsageDescription": ""
                         }
                     }
                 },
@@ -256,8 +271,7 @@
                     "ios": {
                         "usageDescriptions": {
                             "NSCameraUsageDescription": "",
-                            "NSPhotoLibraryUsageDescription": "",
-                            "NSMicrophoneUsageDescription": ""
+                            "NSPhotoLibraryUsageDescription": ""
                         }
                     }
                 },
@@ -273,7 +287,7 @@
                 "admobUserTrackingUsageDescription": null,
                 "__typename": "ProjectSettings"
             },
-            "hasAdmob": false,
+            "hasAdmob": true,
             "hasBluetoothLowEnergy": null,
             "hasPushNotification": false,
             "hasAssistant": null,
@@ -282,7 +296,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "1",
+            "totalCopy": "2",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
